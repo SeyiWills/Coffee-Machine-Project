@@ -22,12 +22,13 @@ def coffee_maker():
     global resources
     #global order
 
+
 while can_make_any_drink():
     order = input("What would you like? (espresso/latte/cappuccino): ").lower()
-    
+    #This is for the maintainers of the coffee machine
     if order == "off":
         exit()
-    
+    #to get a report if theres enough resources for each coffee
     elif order == "report":
         print(f"Water: {resources['water']}ml")
         print(f"Milk: {resources['milk']}ml")
